@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+
+  font-family: "Inter", sans-serif;
+
+  background-color: #ffffff;
+
+  color: #344a53;
+}
+
+
+button,
+a {
+  font-family: inherit;
+}
+
+
+#root {
+  width: 100%;
+}

@@ -1,0 +1,354 @@
+.videos {
+    width: 100%;
+    padding: 110px 6%;
+    background: #f8fafc;
+  }
+  
+  /* =========================
+     HEADING
+  ========================= */
+  
+  .videos-heading {
+    max-width: 650px;
+    margin: 0 auto 65px;
+    text-align: center;
+  }
+  
+  .section-label {
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #4d7c9a;
+  }
+  
+  .videos-heading h2 {
+    margin-bottom: 18px;
+    font-size: 42px;
+    font-weight: 600;
+    color: #1f3d52;
+  }
+  
+  .videos-heading > p:last-child {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #64748b;
+  }
+  
+  /* =========================
+     CAROUSEL
+  ========================= */
+  
+  .videos-carousel {
+    position: relative;
+    max-width: 1250px;
+    margin: 0 auto 45px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .videos-display {
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* =========================
+     VIDEO CARDS
+  ========================= */
+  
+  .video-card {
+    position: relative;
+    overflow: hidden;
+  
+    border-radius: 18px;
+  
+    background: #0f172a;
+  
+    box-shadow:
+      0 15px 35px rgba(0, 0, 0, 0.12);
+  }
+  
+  .video-card iframe {
+    width: 100%;
+    height: 100%;
+  
+    display: block;
+  
+    border: none;
+  }
+  
+  /* Side videos */
+  
+  .video-side {
+    z-index: 1;
+  }
+  
+  /* Main video */
+  
+  .video-main {
+    z-index: 3;
+  
+    box-shadow:
+      0 25px 55px rgba(0, 0, 0, 0.22);
+  }
+  
+  /* =========================
+     LANDSCAPE VIDEOS
+  ========================= */
+  
+  .video-landscape.video-main {
+    width: 48%;
+    aspect-ratio: 16 / 9;
+  }
+  
+  .video-landscape.video-left,
+  .video-landscape.video-right {
+    width: 30%;
+    aspect-ratio: 16 / 9;
+  }
+  
+  /* =========================
+     SHORT VIDEOS
+  ========================= */
+  
+  .video-short.video-main {
+    width: 30%;
+    aspect-ratio: 9 / 16;
+  }
+  
+  .video-short.video-left,
+  .video-short.video-right {
+    width: 19%;
+    aspect-ratio: 9 / 16;
+  }
+  
+  /* =========================
+     STACKED EFFECT
+  ========================= */
+  
+  .video-left {
+    transform:
+      translateX(70px)
+      scale(0.88);
+  
+    z-index: 1;
+  }
+  
+  .video-right {
+    transform:
+      translateX(-70px)
+      scale(0.88);
+  
+    z-index: 1;
+  }
+  
+  /* =========================
+     ARROWS
+  ========================= */
+  
+  .videos-arrow {
+    position: absolute;
+  
+    width: 48px;
+    height: 48px;
+  
+    border: none;
+    border-radius: 50%;
+  
+    background: white;
+    color: #1f3d52;
+  
+    font-size: 32px;
+    line-height: 1;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    cursor: pointer;
+  
+    z-index: 5;
+  
+    box-shadow:
+      0 8px 25px rgba(0, 0, 0, 0.15);
+  
+    transition:
+      transform 0.25s ease,
+      background 0.25s ease,
+      color 0.25s ease;
+  }
+  
+  .videos-arrow:hover {
+    transform: scale(1.1);
+  
+    background: #1f3d52;
+    color: white;
+  }
+  
+  .videos-arrow-left {
+    left: 2%;
+  }
+  
+  .videos-arrow-right {
+    right: 2%;
+  }
+  
+  /* =========================
+     COUNTER
+  ========================= */
+  
+  .videos-counter {
+    position: absolute;
+  
+    left: 50%;
+    bottom: -38px;
+  
+    transform: translateX(-50%);
+  
+    display: flex;
+    align-items: center;
+  
+    gap: 8px;
+  
+    font-size: 14px;
+    font-weight: 500;
+  
+    color: #1f3d52;
+  
+    letter-spacing: 1px;
+  
+    z-index: 5;
+  }
+  
+  .counter-divider {
+    color: #94a3b8;
+  }
+  
+  /* =========================
+     TABLET
+  ========================= */
+  
+  @media (max-width: 900px) {
+  
+    .videos {
+      padding: 90px 5%;
+    }
+  
+    .video-landscape.video-main {
+      width: 50%;
+    }
+  
+    .video-landscape.video-left,
+    .video-landscape.video-right {
+      width: 30%;
+    }
+  
+    .video-short.video-main {
+      width: 32%;
+    }
+  
+    .video-short.video-left,
+    .video-short.video-right {
+      width: 20%;
+    }
+  
+    .video-left {
+      transform:
+        translateX(50px)
+        scale(0.88);
+    }
+  
+    .video-right {
+      transform:
+        translateX(-50px)
+        scale(0.88);
+    }
+  
+    .videos-arrow-left {
+      left: 0;
+    }
+  
+    .videos-arrow-right {
+      right: 0;
+    }
+  }
+  
+  /* =========================
+     MOBILE
+  ========================= */
+  
+  @media (max-width: 600px) {
+  
+    .videos {
+      padding: 75px 5%;
+    }
+  
+    .videos-heading {
+      margin-bottom: 45px;
+    }
+  
+    .videos-heading h2 {
+      font-size: 34px;
+    }
+  
+    /*
+      On mobile, side videos become
+      much smaller so the main video
+      remains the focus.
+    */
+  
+    .video-landscape.video-main {
+      width: 68%;
+    }
+  
+    .video-landscape.video-left,
+    .video-landscape.video-right {
+      width: 24%;
+    }
+  
+    .video-short.video-main {
+      width: 45%;
+    }
+  
+    .video-short.video-left,
+    .video-short.video-right {
+      width: 16%;
+    }
+  
+    .video-left {
+      transform:
+        translateX(30px)
+        scale(0.8);
+    }
+  
+    .video-right {
+      transform:
+        translateX(-30px)
+        scale(0.8);
+    }
+  
+    .videos-arrow {
+      width: 40px;
+      height: 40px;
+  
+      font-size: 26px;
+    }
+  
+    .videos-arrow-left {
+      left: -5px;
+    }
+  
+    .videos-arrow-right {
+      right: -5px;
+    }
+  
+    .videos-counter {
+      bottom: -35px;
+      font-size: 13px;
+    }
+  }

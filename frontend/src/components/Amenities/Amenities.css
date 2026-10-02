@@ -1,0 +1,188 @@
+/* =========================
+   AMENITIES
+========================= */
+
+.amenities {
+  width: 100%;
+  padding: 110px 6%;
+
+  background: #ffffff;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.amenities-heading {
+  max-width: 650px;
+
+  margin: 0 auto 60px;
+
+  text-align: center;
+}
+
+.section-label {
+  margin-bottom: 12px;
+
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+
+  color: #4d7c9a;
+}
+
+.amenities-heading h2 {
+  margin-bottom: 18px;
+
+  font-size: 42px;
+  font-weight: 600;
+
+  color: #1f3d52;
+}
+
+.amenities-heading > p:last-child {
+  font-size: 16px;
+  line-height: 1.7;
+
+  color: #64748b;
+}
+
+
+/* =========================
+   AMENITIES GRID
+========================= */
+
+.amenities-grid {
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 22px;
+}
+
+
+/* =========================
+   AMENITY CARD
+========================= */
+
+.amenity-card {
+  padding: 35px 25px;
+
+  text-align: center;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.amenity-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 15px 35px rgba(31, 61, 82, 0.1);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.amenity-icon {
+  width: 58px;
+  height: 58px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eef5f8;
+
+  font-size: 26px;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.amenity-card h3 {
+  margin-bottom: 12px;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  color: #1f3d52;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.amenity-card p {
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  color: #64748b;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .amenities {
+    padding: 90px 5%;
+  }
+
+  .amenities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .amenities {
+    padding: 75px 5%;
+  }
+
+  .amenities-heading {
+    margin-bottom: 40px;
+  }
+
+  .amenities-heading h2 {
+    font-size: 34px;
+  }
+
+  .amenities-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .amenity-card {
+    padding: 30px 22px;
+  }
+}

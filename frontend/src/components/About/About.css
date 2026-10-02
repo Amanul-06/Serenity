@@ -1,0 +1,170 @@
+/* ================================
+   ABOUT SECTION
+================================ */
+
+.about {
+  width: 100%;
+  padding: 120px 0;
+  background: #f7f6f2;
+  color: #1d3b4a;
+}
+
+
+/* ================================
+   CONTAINER
+================================ */
+
+.about-container {
+  width: min(88%, 1100px);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+
+/* ================================
+   LABEL
+================================ */
+
+.about-label {
+  margin: 0 0 20px;
+
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+
+  color: #6d858f;
+}
+
+
+/* ================================
+   HEADING
+================================ */
+
+.about-heading h2 {
+  margin: 0;
+
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+
+/* ================================
+   CONTENT
+================================ */
+
+.about-content {
+  align-self: center;
+
+  max-width: 520px;
+}
+
+.about-content p {
+  margin: 0 0 22px;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+
+  color: #52666e;
+}
+
+.about-content .about-intro {
+  font-size: 1.25rem;
+  line-height: 1.7;
+
+  color: #304b57;
+}
+
+
+/* ================================
+   LINK
+================================ */
+
+.about-link {
+  display: inline-block;
+
+  margin-top: 12px;
+  padding-bottom: 5px;
+
+  color: #1d3b4a;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #1d3b4a;
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.about-link:hover {
+  opacity: 0.7;
+  transform: translateX(4px);
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 768px) {
+  .about {
+    padding: 90px 0;
+  }
+
+  .about-container {
+    width: 88%;
+
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-heading h2 {
+    font-size: 3.2rem;
+  }
+
+  .about-content {
+    max-width: 600px;
+  }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 480px) {
+  .about {
+    padding: 75px 0;
+  }
+
+  .about-container {
+    width: 88%;
+    gap: 35px;
+  }
+
+  .about-label {
+    font-size: 0.7rem;
+  }
+
+  .about-heading h2 {
+    font-size: 2.6rem;
+  }
+
+  .about-content .about-intro {
+    font-size: 1.1rem;
+  }
+
+  .about-content p {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+}
