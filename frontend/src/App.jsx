@@ -6,6 +6,7 @@ import Gallery from "./components/Gallery/Gallery";
 import Videos from "./components/Videos/Videos";
 import Location from "./components/Location/Location";
 import Contact from "./components/Contact/Contact";
+import WhatsApp from "./components/WhatsApp/WhatsApp";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Videos />
       <Location />
       <Contact />
+      <WhatsApp />
       <Footer />
     </>
   );
